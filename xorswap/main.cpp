@@ -6,11 +6,9 @@ double pow(double &num, int &dgr);
 
 void show(const int &a, const int &b);
 
-void init(int &a, int &b);
-
 int main() {
-	int a, b;
-	initialize(a,b);	
+	int a = 11;
+	int b = 33;
 	
 	show(a,b);
 	xorSwap(a,b);
@@ -21,11 +19,6 @@ int main() {
 
 inline void xorSwap(int &a, int &b) {
 	a ^= b, b ^= a, a ^= b;
-}
-
-void init(int &a, int &b) {
-	a = 11;
-	b = 33;
 }
 
 void show(const int &a, const int &b) {
