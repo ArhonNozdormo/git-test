@@ -1,4 +1,4 @@
-#include <iostream>
+#include "stdafx.h"
 
 inline void xorSwap(int &a, int &b);
 
@@ -15,7 +15,7 @@ int main() {
 	show(a,b);
 	xorSwap(a,b);
 	show(a,b);
-	
+	cinClean();
 	return EXIT_SUCCESS;
 }
 
