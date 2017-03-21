@@ -7,3 +7,4 @@
 #define string 	std::string
 
 void cinClean();
+int randomNext(int maxNum)
