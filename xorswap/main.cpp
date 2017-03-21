@@ -2,6 +2,8 @@
 
 inline void xorSwap(int &a, int &b);
 
+double pow(double &num, int &dgr);
+
 void show(const int &a, const int &b);
 
 int main() {
@@ -21,4 +23,16 @@ inline void xorSwap(int &a, int &b) {
 
 void show(const int &a, const int &b) {
 	std::cout << "A = " << a << '\t' << "B = " << b << std::endl;
+}
+
+double pow(double &num, int &dgr) {
+	double result = 1;
+	while(dgr) {
+		if( dgr & 1) {
+			result *= num;
+		}
+		num *= num;
+		dgr >>= 1;
+	}
+	return result;
 }
