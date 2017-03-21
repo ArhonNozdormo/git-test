@@ -15,7 +15,7 @@ int main() {
 	show(a,b);
 	xorSwap(a,b);
 	show(a,b);
-	cinClean();
+
 	return EXIT_SUCCESS;
 }
 
